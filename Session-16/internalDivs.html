@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div > span{
+            display: none;
+        }
+        span{
+            display: block;
+        }
+        /* p:hover{
+            background: green;
+            height: 2em;
+        } */
+        div:hover :first-child{
+            background: green;
+            height: 2em;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <main role="main">
+        <!-- <nav role="navigation"></nav> -->
+        <div>
+            <p>this is test.</p>
+            <p>this is test.</p>
+            <span>this is test.</span>
+        </div>
+        <!-- <span>this is outter p.</span> -->
+        <p>this is outter p.</p>
+</main>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            border: 1px solid black;
+            padding: 4px;
+        }
+
+        img#imgCard {
+            float: right;
+        }
+
+        .card {
+            margin-top: 15px;
+        }
+
+        .clearfix {
+            overflow: auto;
+        }
+
+        img.imgCardLeft {
+            float: Left;
+        }
+        p{
+            width: 50%;
+            margin: auto;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="clearfix">
+        <img id="imgCard" src="egg.jpg" alt="egg">
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde excepturi officia veniam autem? Repellendus
+            neque hic debitis veniam ut minima autem nemo laudantium iure quibusdam, totam, dignissimos ducimus, impedit
+            sint.
+        </p>
+    </div>
+    <div class="card clearfix">
+        <img class="imgCardLeft" src="egg.jpg" alt="egg">
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde excepturi officia veniam autem? Repellendus
+            neque
+            hic debitis veniam ut minima autem nemo laudantium iure quibusdam, totam, dignissimos ducimus, impedit sint.
+        </p>
+    </div>
+</body>
+
+</html>

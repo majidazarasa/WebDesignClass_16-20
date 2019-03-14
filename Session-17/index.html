@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        ::selection {
+            background: yellow;
+        }
+
+        img {
+            opacity: .3;
+        }
+
+        section div img.productImage {
+            width: 300px;
+            opacity: .3;
+            border: 1px solid black;
+        }
+
+        section div img.productImage:hover {
+            opacity: 1.0;
+            border: 1px solid white;
+            cursor: pointer;
+        }
+
+        nav {
+            background: #8E2DE2;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #4A00E0, #8E2DE2);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            border: 2px solid lightgreen;
+        }
+
+        nav div {
+            margin: 30px;
+            background: #f2f2f2;
+            border: 1px solid black;
+            opacity: .4;
+        }
+        nav div p{
+            margin: 5%;
+            font-weight: bold;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem placeat optio nemo inventore
+                perspiciatis ad sunt quibusdam praesentium temporibus voluptatum. Veniam rem nam minima laborum soluta,
+                omnis
+                beatae blanditiis vel.
+            </p>
+        </div>
+    </nav>
+    <article>
+        <section>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum blanditiis distinctio inventore
+            possimus esse commodi incidunt aliquid est ad reiciendis repellendus iste, hic dignissimos, facilis optio
+            necessitatibus saepe totam nihil! </section>
+    </article>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium ducimus tenetur ad repellat sunt? Minus
+        soluta sapiente corporis temporibus maxime quis a, similique, autem beatae esse unde officia dolores
+        repudiandae. </p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium ducimus tenetur ad repellat sunt? Minus
+        soluta sapiente corporis temporibus maxime quis a, similique, autem beatae esse unde officia dolores
+        repudiandae. </p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium ducimus tenetur ad repellat sunt? Minus
+        soluta sapiente corporis temporibus maxime quis a, similique, autem beatae esse unde officia dolores
+        repudiandae. </p>
+    <section>
+        <div>
+            <img class="productImage" src="treelife.jpg" alt="">
+            <img class="productImage" src="treelife1.jpg" alt="">
+            <img class="productImage" src="treelife3.jpg" alt="">
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial;
+            margin: 0px;
+        }
+        .header{
+            padding: 60px;
+            text-align: center;
+            background: #1abc9c;
+            color: white;
+        }
+        .navbar{
+            display: flex;
+            background: #333;
+        }
+        .navbar a{
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .navbar a:hover{
+            background: #ddd;
+            color: black;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .side{
+            flex: 20%;
+            background: #f1f1f1;
+            padding: 20px;
+        }
+        .main{
+            flex: 70%;            
+            background: white;
+            padding: 20px;
+        }
+        .fakeimg{
+            background: #aaa;
+            width: 100%;
+            padding: 20px;
+            height: 60px;
+            margin: 5px;
+        }
+        .footer{
+            padding: 20px;
+            text-align: center;
+            background: #ccc;
+        }
+        @media screen and (max-width:700px){
+            .row, .navbar{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>My Website</h1>
+    </div>
+    <div class="navbar">
+        <a href="#">item1</a>
+        <a href="#">item2</a>
+        <a href="#">item3</a>
+        <a href="#">item4</a>
+    </div>
+    <div class="row">
+        <div class="side">
+            <h2>About me</h2>
+            <h5>Photo of me</h5>
+            <div class="fakeimg">image</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quo earum, amet aut nostrum rem, ducimus nisi quisquam tempore aspernatur nobis. Similique quia iusto doloremque necessitatibus vel. Impedit, voluptas dolor.</p>
+            <div class="fakeimg">image</div>
+            <div class="fakeimg">image</div>
+            <div class="fakeimg">image</div>
+        </div>
+        <div class="main">
+            <h2>Title Heading</h2>
+            <h5>Title ZDescription</h5>
+            <div class="fakeimg">image</div>
+            <p>Some Text ...</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit expedita nesciunt repellat reiciendis unde, soluta sapiente molestias amet eum error doloribus nobis ducimus non cumque veritatis aspernatur ab consequuntur voluptatem.</p>
+        </div>
+    </div>
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+</body>
+</html>

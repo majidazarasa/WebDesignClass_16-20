@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo" style="display:none">
+        What can Javascript do?
+    </p>
+    <button onclick="showPara();">Show Text</button>
+    <div id="section" ondblclick="changeForeColor();">Div</div>
+    <script>
+            function showPara(){
+                document.getElementById('demo').style.display="block";
+                document.getElementById("section").style.backgroundColor="#2eccf1";
+            }
+            function changeForeColor(){
+                document.getElementById("section").style.backgroundColor="#2eccf1";
+            }
+        </script>
+</body>
+</html>
